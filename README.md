@@ -1,4 +1,4 @@
-# observabilidade
+# integração continua-devops-observabilidade
 Projeto observabilidade da turma devops infnet
 
 Professor: Leonardo Gloria

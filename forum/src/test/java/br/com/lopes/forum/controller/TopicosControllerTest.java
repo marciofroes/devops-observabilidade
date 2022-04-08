@@ -27,19 +27,10 @@ class TopicosControllerTest {
     private List<Topico> topicos;
 
     @BeforeEach
-    void init() throws InterruptedException {
-        Thread.sleep(100);
+    void init()  {
         topicos = topicoRepository.findAll();
     }
 
-
-    @Test
-    @DisplayName("Deve retornar topico de ID 1")
-    void detalhar() {
-        Optional<Topico> topico = topicoRepository.findById(TOPICO_ID_UM);
-        assertNotNull(topico);
-        assertEquals("Duvida 1", topico.get().getTitulo());
-    }
 
     @Test
     @DisplayName("Deve Listar todos os topicos")
@@ -59,6 +50,14 @@ class TopicosControllerTest {
         }
         assertNotNull(topico);
         assertEquals("Novo Titulo", novoTopico.getTitulo());
+    }
+
+    @Test
+    @DisplayName("Deve retornar topico de ID 1")
+    void detalhar() {
+        Optional<Topico> topico = topicoRepository.findById(TOPICO_ID_UM);
+        assertNotNull(topico);
+        assertEquals("Novo Titulo", topico.get().getTitulo());
     }
 
     private AtualizacaoTopicoForm atualizaForm() {

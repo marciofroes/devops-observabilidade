@@ -54,7 +54,7 @@ class TopicosControllerTest {
     }
 
     @Test
-    @DisplayName("Deve retornar topico de ID 1 validar o titulo")
+    @DisplayName("Deve retornar topico de ID 1")
     void detalhar() {
         Optional<Topico> topico = topicoRepository.findById(TOPICO_ID_UM);
         assertNotNull(topico);

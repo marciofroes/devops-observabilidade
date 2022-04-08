@@ -24,6 +24,7 @@ class TopicosControllerTest {
     TopicoRepository topicoRepository;
 
     final long TOPICO_ID_UM = 1L;
+    final long TOTOTAL_REGISTROS = 3L;
     private List<Topico> topicos;
 
     @BeforeEach
@@ -36,7 +37,7 @@ class TopicosControllerTest {
     @DisplayName("Deve Listar todos os topicos")
     void lista() {
         assertNotNull(topicos);
-        assertEquals(3, topicos.size());
+        assertEquals(TOTOTAL_REGISTROS, topicos.size());
     }
 
     @Test

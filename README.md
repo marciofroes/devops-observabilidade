@@ -7,3 +7,5 @@ Nome do curso: Integração Contínua e DevOps [22E1_3]
 
 Aluno:
 Márcio Lopes Froes
+Osvaldo de Abreu Moura
+Leandro Moreira
